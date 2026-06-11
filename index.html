@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio Sécurisé</title>
+
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline'">
+
+    <style>
+        /* --- Styles de base et reset --- */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f4f6f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* --- En-tête (Header) --- */
+        header {
+            background: #1a1a2e;
+            color: #ffffff;
+            padding: 3rem 1rem;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            color: #00fff0;
+            font-size: 1.2rem;
+            font-weight: 500;
+        }
+
+        /* --- Conteneur Principal --- */
+        .container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        /* --- Sections --- */
+        section {
+            background: #ffffff;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        }
+
+        section h2 {
+            color: #1a1a2e;
+            margin-bottom: 1rem;
+            border-bottom: 3px solid #00fff0;
+            padding-bottom: 0.5rem;
+            display: inline-block;
+        }
+
+        /* --- Grille de Compétences --- */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        .skill-card {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 6px;
+            border-left: 4px solid #1a1a2e;
+        }
+
+        .skill-card h3 {
+            margin-bottom: 0.5rem;
+            color: #1a1a2e;
+        }
+
+        /* --- Grille de Projets --- */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        .project-card {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 6px;
+            border: 1px solid #e9ecef;
+            transition: transform 0.2s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-3px);
+        }
+
+        .project-card h3 {
+            color: #1a1a2e;
+            margin-bottom: 0.5rem;
+        }
+
+        /* --- Footer --- */
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #666666;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Rayane Ababsa</h1>
+        <p>Développeur & Étudiant en Informatique</p>
+    </header>
+
+    <div class="container">
+        <section id="about">
+            <h2>À propos</h2>
+            <p>Bienvenue sur mon portfolio sécurisé. Passionné par le développement d'applications, l'architecture logicielle et la conception de systèmes performants, je crée des solutions numériques optimisées et adaptées aux besoins actuels.</p>
+        </section>
+
+        <section id="skills">
+            <h2>Compétences</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>Développement Web</h3>
+                    <p>HTML5, CSS3, JavaScript, création d'interfaces dynamiques.</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Applications & Mobile</h3>
+                    <p>Conception d'architectures logicielles et intégration d'API.</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Systèmes & Cloud</h3>
+                    <p>Gestion de bases de données, sécurité et déploiements.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Projets Récents</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>Portfolio Statique</h3>
+                    <p>Déploiement d'un site vitrine optimisé sur GitHub Pages, intégrant des politiques de sécurité strictes (CSP) contre les vulnérabilités courantes.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Applications et Projets Web</h3>
+                    <p>Développement de solutions interactives avec gestion de données, création de maquettes et traitement de requêtes asynchrones.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Vous pouvez me retrouver et suivre l'avancée de mes projets directement sur mon profil GitHub.</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Rayane Ababsa - Tous droits réservés</p>
+    </footer>
+
+</body>
+</html>
