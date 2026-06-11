@@ -20,13 +20,99 @@
             background-color: #f4f6f9;
             color: #333;
             line-height: 1.6;
+            padding-top: 60px; /* Espace pour la barre de navigation fixe */
+        }
+
+        /* --- Barre de Navigation & Menu Déroulant --- */
+        nav {
+            background-color: #1a1a2e;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        .nav-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 1rem;
+            height: 60px;
+        }
+
+        .logo {
+            color: #ffffff;
+            font-weight: bold;
+            font-size: 1.2rem;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-links > li {
+            position: relative;
+        }
+
+        .nav-links a {
+            display: block;
+            color: #ffffff;
+            text-decoration: none;
+            padding: 0 1.5rem;
+            line-height: 60px;
+            transition: background 0.3s;
+        }
+
+        .nav-links a:hover {
+            background-color: #252542;
+            color: #00fff0;
+        }
+
+        /* Style du Menu Déroulant (Dropdown) */
+        .dropdown {
+            position: relative;
+        }
+
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #1a1a2e;
+            min-width: 180px;
+            list-style: none;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            border-bottom-left-radius: 4px;
+            border-bottom-right-radius: 4px;
+        }
+
+        .dropdown-menu li a {
+            line-height: 45px;
+            padding: 0 1rem;
+            border-bottom: 1px solid #252542;
+        }
+
+        .dropdown-menu li:last-child a {
+            border-bottom: none;
+        }
+
+        /* Affichage au survol */
+        .dropdown:hover .dropdown-menu {
+            display: block;
         }
 
         /* --- En-tête (Header) --- */
         header {
-            background: #1a1a2e;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
             color: #ffffff;
-            padding: 3rem 1rem;
+            padding: 4rem 1rem;
             text-align: center;
         }
 
@@ -65,27 +151,22 @@
             display: inline-block;
         }
 
-        /* --- Grille de Compétences --- */
-        .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 1.5rem;
-            margin-top: 1rem;
+        /* --- Zone Image de Profil --- */
+        .profile-zone {
+            text-align: center;
+            margin-bottom: 1.5rem;
         }
 
-        .skill-card {
-            background: #f8f9fa;
-            padding: 1.5rem;
-            border-radius: 6px;
-            border-left: 4px solid #1a1a2e;
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #00fff0;
+            background-color: #e9ecef;
         }
 
-        .skill-card h3 {
-            margin-bottom: 0.5rem;
-            color: #1a1a2e;
-        }
-
-        /* --- Grille de Projets --- */
+        /* --- Grille de Projets / Compétences --- */
         .projects-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -98,11 +179,6 @@
             padding: 1.5rem;
             border-radius: 6px;
             border: 1px solid #e9ecef;
-            transition: transform 0.2s;
-        }
-
-        .project-card:hover {
-            transform: translateY(-3px);
         }
 
         .project-card h3 {
@@ -121,53 +197,77 @@
 </head>
 <body>
 
+    <nav>
+        <div class="nav-container">
+            <a href="#" class="logo">Portfolio</a>
+            <ul class="nav-links">
+                <li><a href="#about">Accueil</a></li>
+                <li><a href="#cv">Mon CV</a></li>
+                <li class="dropdown">
+                    <a href="#competences">Compétences ▾</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#comp1">Compétence 1</a></li>
+                        <li><a href="#comp2">Compétence 2</a></li>
+                        <li><a href="#comp3">Compétence 3</a></li>
+                        <li><a href="#comp4">Compétence 4</a></li>
+                        <li><a href="#comp5">Compétence 5</a></li>
+                        <li><a href="#comp6">Compétence 6</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
     <header>
+        <div class="profile-zone">
+            <img src="avatar.png" alt="Photo de Rayane Ababsa" class="profile-img">
+        </div>
         <h1>Rayane Ababsa</h1>
         <p>Développeur & Étudiant en Informatique</p>
     </header>
 
     <div class="container">
+        
         <section id="about">
             <h2>À propos</h2>
-            <p>Bienvenue sur mon portfolio sécurisé. Passionné par le développement d'applications, l'architecture logicielle et la conception de systèmes performants, je crée des solutions numériques optimisées et adaptées aux besoins actuels.</p>
+            <p>Bienvenue sur mon portfolio sécurisé. Actuellement étudiant en informatique, je me passionne pour la conception d'applications et le développement de solutions logicielles performantes.</p>
         </section>
 
-        <section id="skills">
-            <h2>Compétences</h2>
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <h3>Développement Web</h3>
-                    <p>HTML5, CSS3, JavaScript, création d'interfaces dynamiques.</p>
-                </div>
-                <div class="skill-card">
-                    <h3>Applications & Mobile</h3>
-                    <p>Conception d'architectures logicielles et intégration d'API.</p>
-                </div>
-                <div class="skill-card">
-                    <h3>Systèmes & Cloud</h3>
-                    <p>Gestion de bases de données, sécurité et déploiements.</p>
-                </div>
-            </div>
+        <section id="cv">
+            <h2>Mon Parcours & CV</h2>
+            <p>Retrouvez ici mon parcours académique, mes expériences professionnelles ainsi que mon CV en téléchargement.</p>
         </section>
 
-        <section id="projects">
-            <h2>Projets Récents</h2>
+        <section id="competences">
+            <h2>Mes Compétences (BUT)</h2>
             <div class="projects-grid">
-                <div class="project-card">
-                    <h3>Portfolio Statique</h3>
-                    <p>Déploiement d'un site vitrine optimisé sur GitHub Pages, intégrant des politiques de sécurité strictes (CSP) contre les vulnérabilités courantes.</p>
+                <div id="comp1" class="project-card">
+                    <h3>Compétence 1</h3>
+                    <p>Description ou réalisations liées à la compétence 1.</p>
                 </div>
-                <div class="project-card">
-                    <h3>Applications et Projets Web</h3>
-                    <p>Développement de solutions interactives avec gestion de données, création de maquettes et traitement de requêtes asynchrones.</p>
+                <div id="comp2" class="project-card">
+                    <h3>Compétence 2</h3>
+                    <p>Description ou réalisations liées à la compétence 2.</p>
+                </div>
+                <div id="comp3" class="project-card">
+                    <h3>Compétence 3</h3>
+                    <p>Description ou réalisations liées à la compétence 3.</p>
+                </div>
+                <div id="comp4" class="project-card">
+                    <h3>Compétence 4</h3>
+                    <p>Description ou réalisations liées à la compétence 4.</p>
+                </div>
+                <div id="comp5" class="project-card">
+                    <h3>Compétence 5</h3>
+                    <p>Description ou réalisations liées à la compétence 5.</p>
+                </div>
+                <div id="comp6" class="project-card">
+                    <h3>Compétence 6</h3>
+                    <p>Description ou réalisations liées à la compétence 6.</p>
                 </div>
             </div>
         </section>
 
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Vous pouvez me retrouver et suivre l'avancée de mes projets directement sur mon profil GitHub.</p>
-        </section>
     </div>
 
     <footer>
