@@ -13,7 +13,7 @@
             background-color: #1a1a2e;
             color: white;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            user-select: none; /* empêche la sélection */
+            user-select: none;
         }
 
         header {
@@ -29,14 +29,20 @@
             width: 100%;
             height: 90vh;
             background: #000;
-            overflow: hidden;
+            overflow-y: scroll; /* Permet le scroll */
+            -ms-overflow-style: none;  /* IE/Edge */
+            scrollbar-width: none;     /* Firefox */
+        }
+
+        .pdf-container::-webkit-scrollbar {
+            display: none; /* Chrome */
         }
 
         iframe {
             width: 100%;
             height: 100%;
             border: none;
-            pointer-events: none; /* empêche interactions (download, zoom, etc.) */
+            pointer-events: auto; /* Permet le scroll */
         }
 
         .back-btn {
@@ -61,7 +67,7 @@
         /* Bloque clic droit */
         document.addEventListener("contextmenu", event => event.preventDefault());
 
-        /* Bloque touches de téléchargement */
+        /* Bloque touches de téléchargement / impression */
         document.addEventListener("keydown", function(e) {
             if (
                 e.ctrlKey && (e.key === "s" || e.key === "p" || e.key === "u") ||
@@ -80,7 +86,6 @@
 </header>
 
 <div class="pdf-container">
-    <!-- PDF affiché sans possibilité d'interaction -->
     <iframe src="cv.pdf#toolbar=0&navpanes=0&scrollbar=0"></iframe>
 </div>
 
