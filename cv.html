@@ -13,6 +13,7 @@
             background-color: #1a1a2e;
             color: white;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            user-select: none; /* empêche la sélection */
         }
 
         header {
@@ -28,12 +29,14 @@
             width: 100%;
             height: 90vh;
             background: #000;
+            overflow: hidden;
         }
 
         iframe {
             width: 100%;
             height: 100%;
             border: none;
+            pointer-events: none; /* empêche interactions (download, zoom, etc.) */
         }
 
         .back-btn {
@@ -53,6 +56,21 @@
             background-color: #ffffff;
         }
     </style>
+
+    <script>
+        /* Bloque clic droit */
+        document.addEventListener("contextmenu", event => event.preventDefault());
+
+        /* Bloque touches de téléchargement */
+        document.addEventListener("keydown", function(e) {
+            if (
+                e.ctrlKey && (e.key === "s" || e.key === "p" || e.key === "u") ||
+                e.key === "PrintScreen"
+            ) {
+                e.preventDefault();
+            }
+        });
+    </script>
 </head>
 
 <body>
@@ -62,8 +80,8 @@
 </header>
 
 <div class="pdf-container">
-    <!-- Ton fichier PDF doit s'appeler cv.pdf -->
-    <iframe src="cv.pdf"></iframe>
+    <!-- PDF affiché sans possibilité d'interaction -->
+    <iframe src="cv.pdf#toolbar=0&navpanes=0&scrollbar=0"></iframe>
 </div>
 
 <a href="index.html" class="back-btn">← Retour au Portfolio</a>
