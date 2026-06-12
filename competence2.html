@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Compétence X - Mon Portfolio</title> <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline'">
+    <title>Compétence 2 - Optimiser des applications</title>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline'">
 
     <style>
-        /* --- STYLES IDENTIQUES À INDEX.HTML --- */
         * {
             box-sizing: border-box;
             margin: 0;
@@ -72,10 +72,6 @@
             color: #00fff0;
         }
 
-        .dropdown {
-            position: relative;
-        }
-
         .dropdown-menu {
             display: none;
             position: absolute;
@@ -89,16 +85,6 @@
             border-bottom-right-radius: 4px;
         }
 
-        .dropdown-menu li a {
-            line-height: 45px;
-            padding: 0 1rem;
-            border-bottom: 1px solid #252542;
-        }
-
-        .dropdown-menu li:last-child a {
-            border-bottom: none;
-        }
-
         .dropdown:hover .dropdown-menu {
             display: block;
         }
@@ -110,16 +96,10 @@
             text-align: center;
         }
 
-        header h1 {
-            font-size: 2.2rem;
-            margin-bottom: 0.5rem;
-        }
-
         .container {
             max-width: 900px;
             margin: 2rem auto;
             padding: 0 1rem;
-            min-height: 60vh; /* Aligne le footer vers le bas */
         }
 
         section {
@@ -138,6 +118,11 @@
             display: inline-block;
         }
 
+        section h3 {
+            margin: 1.5rem 0 0.5rem 0;
+            color: #16213e;
+        }
+
         .back-btn {
             display: inline-block;
             margin-top: 1.5rem;
@@ -153,62 +138,108 @@
             background-color: #00fff0;
             color: #1a1a2e;
         }
-
-        footer {
-            text-align: center;
-            padding: 2rem;
-            color: #666666;
-            font-size: 0.9rem;
-        }
     </style>
 </head>
+
 <body>
 
-    <nav>
-        <div class="nav-container">
-            <a href="index.html" class="logo">Portfolio</a>
-            <ul class="nav-links">
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="index.html#cv">Mon CV</a></li>
-                <li class="dropdown">
-                    <a href="#">Compétences ▾</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="competence1.html">Compétence 1</a></li>
-                        <li><a href="competence2.html">Compétence 2</a></li>
-                        <li><a href="competence3.html">Compétence 3</a></li>
-                        <li><a href="competence4.html">Compétence 4</a></li>
-                        <li><a href="competence5.html">Compétence 5</a></li>
-                        <li><a href="competence6.html">Compétence 6</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-    </nav>
-
-    <header>
-        <h1>Détail de la Compétence</h1>
-    </header>
-
-    <div class="container">
-        
-        <section>
-            <h2>Compétence X : [Nom de la compétence]</h2> <p style="margin-top: 1rem;">
-                Voici la description détaillée de ce que j'ai réalisé pour valider cette compétence dans mon cursus informatique.
-            </p>
-            
-            <h3 style="margin: 1.5rem 0 0.5rem 0; color: #16213e;">Projets & Réalisations</h3>
-            <p>
-                [Tu pourras lister ici tes projets ou livrables liés à cette compétence]
-            </p>
-
-            <a href="index.html" class="back-btn">← Retour à l'accueil</a>
-        </section>
-
+<nav>
+    <div class="nav-container">
+        <a href="index.html" class="logo">Portfolio</a>
+        <ul class="nav-links">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="index.html#cv">Mon CV</a></li>
+            <li class="dropdown">
+                <a href="#">Compétences ▾</a>
+                <ul class="dropdown-menu">
+                    <li><a href="competence1.html">Compétence 1</a></li>
+                    <li><a href="competence2.html">Compétence 2</a></li>
+                    <li><a href="competence3.html">Compétence 3</a></li>
+                    <li><a href="competence4.html">Compétence 4</a></li>
+                    <li><a href="competence5.html">Compétence 5</a></li>
+                    <li><a href="competence6.html">Compétence 6</a></li>
+                </ul>
+            </li>
+        </ul>
     </div>
+</nav>
 
-    <footer>
-        <p>&copy; 2026 Rayane Ababsa - Tous droits réservés</p>
-    </footer>
+<header>
+    <h1>Compétence 2 – Optimiser des applications</h1>
+</header>
+
+<div class="container">
+
+<section>
+    <h2>Présentation de la compétence</h2>
+    <p>
+        La compétence « Optimiser des applications » représente l’un des piliers scientifiques les plus exigeants de la deuxième année de B.U.T. Informatique. 
+        Elle consiste à « appliquer des principes algorithmiques complexes pour optimiser des structures de données et des temps de traitement ».
+    </p>
+    <p>
+        Optimiser ne signifie pas simplement rendre un programme plus rapide, mais analyser, mesurer et modéliser le comportement d’une application face à des volumes de données croissants ou des contraintes matérielles strictes.
+    </p>
+
+    <h3>Objectifs de la compétence et Apprentissages Critiques</h3>
+
+    <h4>AC 3.02 – Évaluer l’impact des choix algorithmiques</h4>
+    <p>
+        Niveau de maîtrise : <strong>Maîtrisé</strong><br>
+        J’ai appris à analyser la complexité algorithmique (notation O), identifier les goulots d’étranglement et utiliser des outils de profilage pour mesurer les performances réelles.
+    </p>
+
+    <h4>AC 4.02 – Modéliser des problèmes complexes et implémenter des algorithmes d’optimisation</h4>
+    <p>
+        Niveau de maîtrise : <strong>Maîtrisé</strong><br>
+        J’ai conçu des structures de graphes, implémenté des algorithmes comme Dijkstra et utilisé la programmation dynamique pour transformer des algorithmes exponentiels en solutions viables.
+    </p>
+
+    <h3>Ressources mobilisées</h3>
+    <p>
+        • Algorithmique avancée et graphes (R3.02)  
+        • Automates et langages (R4.02)  
+        • Programmation système (R3.05)  
+    </p>
+    <p>
+        J’ai également approfondi l’optimisation en Swift (profilage, gestion mémoire, LRU Cache).
+    </p>
+
+    <h3>Implication personnelle</h3>
+    <p>
+        J’ai adopté une posture de rigueur : refactoring systématique, analyse scientifique des performances, rôle de « gardien de la performance » en équipe.
+    </p>
+
+    <h3>Analyse réflexive</h3>
+    <p>
+        Ma démarche d’optimisation est devenue méthodique : mesurer → analyser → modéliser → optimiser → vérifier.
+    </p>
+
+    <h3>Projets & réalisations</h3>
+
+    <h4>Trace 1 – Optimisation du cache et filtrage dans PopCornBox</h4>
+    <p>
+        J’ai optimisé les recherches avec des dictionnaires O(1), mis en place un cache d’images et un système de debouncing pour réduire les appels réseau.
+    </p>
+
+    <h4>Trace 2 – Résolution de problèmes par les graphes</h4>
+    <p>
+        J’ai modélisé un problème sous forme de graphe orienté valué et implémenté Dijkstra avec une file de priorité, réduisant la complexité de O(V²) à O(E log V).
+    </p>
+
+    <h3>Bilan et perspectives</h3>
+    <p>
+        Le niveau 2 est validé.  
+        Pour l’année 3 : optimisation Cloud, indexation, tests de performance automatisés en CI/CD.
+    </p>
+
+    <a href="index.html" class="back-btn">← Retour à l'accueil</a>
+</section>
+
+</div>
+
+<footer>
+    <p>&copy; 2026 Rayane Ababsa - Tous droits réservés</p>
+</footer>
 
 </body>
 </html>
