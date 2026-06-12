@@ -3,12 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon Portfolio Sécurisé</title>
+    <title>Mon Portfolio</title>
 
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline'">
 
     <style>
-        /* --- Styles de base et reset --- */
         * {
             box-sizing: border-box;
             margin: 0;
@@ -20,10 +19,10 @@
             background-color: #f4f6f9;
             color: #333;
             line-height: 1.6;
-            padding-top: 60px; /* Espace pour la barre de navigation fixe */
+            padding-top: 60px;
         }
 
-        /* --- Barre de Navigation & Menu Déroulant --- */
+        /* NAVBAR */
         nav {
             background-color: #1a1a2e;
             position: fixed;
@@ -75,11 +74,7 @@
             color: #00fff0;
         }
 
-        /* Style du Menu Déroulant (Dropdown) */
-        .dropdown {
-            position: relative;
-        }
-
+        /* DROPDOWN */
         .dropdown-menu {
             display: none;
             position: absolute;
@@ -93,22 +88,17 @@
             border-bottom-right-radius: 4px;
         }
 
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+
         .dropdown-menu li a {
             line-height: 45px;
             padding: 0 1rem;
             border-bottom: 1px solid #252542;
         }
 
-        .dropdown-menu li:last-child a {
-            border-bottom: none;
-        }
-
-        /* Affichage au survol */
-        .dropdown:hover .dropdown-menu {
-            display: block;
-        }
-
-        /* --- En-tête (Header) --- */
+        /* HEADER */
         header {
             background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
             color: #ffffff;
@@ -127,14 +117,14 @@
             font-weight: 500;
         }
 
-        /* --- Conteneur Principal --- */
+        /* CONTAINER */
         .container {
             max-width: 900px;
             margin: 2rem auto;
             padding: 0 1rem;
         }
 
-        /* --- Sections --- */
+        /* SECTIONS */
         section {
             background: #ffffff;
             padding: 2rem;
@@ -151,25 +141,10 @@
             display: inline-block;
         }
 
-        /* --- Zone Image de Profil --- */
-        .profile-zone {
-            text-align: center;
-            margin-bottom: 1.5rem;
-        }
-
-        .profile-img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 4px solid #00fff0;
-            background-color: #e9ecef;
-        }
-
-        /* --- Grille de Projets / Compétences --- */
+        /* COMPETENCE CARDS */
         .projects-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
             gap: 1.5rem;
             margin-top: 1rem;
         }
@@ -179,6 +154,14 @@
             padding: 1.5rem;
             border-radius: 6px;
             border: 1px solid #e9ecef;
+            transition: transform 0.2s, box-shadow 0.2s;
+            cursor: pointer;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+            border-color: #00fff0;
         }
 
         .project-card h3 {
@@ -186,7 +169,12 @@
             margin-bottom: 0.5rem;
         }
 
-        /* --- Footer --- */
+        .project-card a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* FOOTER */
         footer {
             text-align: center;
             padding: 2rem;
@@ -195,6 +183,7 @@
         }
     </style>
 </head>
+
 <body>
 
     <nav>
@@ -206,12 +195,12 @@
                 <li class="dropdown">
                     <a href="#competences">Compétences ▾</a>
                     <ul class="dropdown-menu">
-                        <li><a href="competence1">Compétence 1</a></li>
-                        <li><a href="competence2">Compétence 2</a></li>
-                        <li><a href="competence3">Compétence 3</a></li>
-                        <li><a href="competence4">Compétence 4</a></li>
-                        <li><a href="competence5">Compétence 5</a></li>
-                        <li><a href="competence6">Compétence 6</a></li>
+                        <li><a href="competence1.html">Compétence 1</a></li>
+                        <li><a href="competence2.html">Compétence 2</a></li>
+                        <li><a href="competence3.html">Compétence 3</a></li>
+                        <li><a href="competence4.html">Compétence 4</a></li>
+                        <li><a href="competence5.html">Compétence 5</a></li>
+                        <li><a href="competence6.html">Compétence 6</a></li>
                     </ul>
                 </li>
             </ul>
@@ -219,52 +208,57 @@
     </nav>
 
     <header>
-        <div class="profile-zone">
-            <img src="avatar.png" alt="Photo de Rayane Ababsa" class="profile-img">
-        </div>
         <h1>Rayane Ababsa</h1>
         <p>Développeur & Étudiant en Informatique</p>
     </header>
 
     <div class="container">
-        
+
         <section id="about">
             <h2>À propos</h2>
-            <p>Bienvenue sur mon portfolio sécurisé. Actuellement étudiant en informatique, je me passionne pour la conception d'applications et le développement de solutions logicielles performantes.</p>
+            <p>Bienvenue sur mon portfolio. Je suis étudiant en informatique, passionné par le développement d’applications, la conception logicielle et les technologies modernes.</p>
         </section>
 
         <section id="cv">
             <h2>Mon Parcours & CV</h2>
-            <p>Retrouvez ici mon parcours académique, mes expériences professionnelles ainsi que mon CV en téléchargement.</p>
+            <p>Découvrez ici mon parcours académique, mes expériences professionnelles et mon CV.</p>
         </section>
 
         <section id="competences">
-            <h2>Mes Compétences (BUT)</h2>
+            <h2>Mes Compétences (BUT Informatique)</h2>
+
             <div class="projects-grid">
-                <div id="comp1" class="project-card">
+
+                <a href="competence1.html" class="project-card">
                     <h3>Compétence 1</h3>
-                    <p>Description ou réalisations liées à la compétence 1.</p>
-                </div>
-                <div id="comp2" class="project-card">
+                    <p>Réaliser un développement d'application</p>
+                </a>
+
+                <a href="competence2.html" class="project-card">
                     <h3>Compétence 2</h3>
-                    <p>Description ou réalisations liées à la compétence 2.</p>
-                </div>
-                <div id="comp3" class="project-card">
+                    <p>Optimiser des applications</p>
+                </a>
+
+                <a href="competence3.html" class="project-card">
                     <h3>Compétence 3</h3>
-                    <p>Description ou réalisations liées à la compétence 3.</p>
-                </div>
-                <div id="comp4" class="project-card">
+                    <p>Administrer des systèmes communicants</p>
+                </a>
+
+                <a href="competence4.html" class="project-card">
                     <h3>Compétence 4</h3>
-                    <p>Description ou réalisations liées à la compétence 4.</p>
-                </div>
-                <div id="comp5" class="project-card">
+                    <p>Gérer des données de l'information</p>
+                </a>
+
+                <a href="competence5.html" class="project-card">
                     <h3>Compétence 5</h3>
-                    <p>Description ou réalisations liées à la compétence 5.</p>
-                </div>
-                <div id="comp6" class="project-card">
+                    <p>Conduire un projet</p>
+                </a>
+
+                <a href="competence6.html" class="project-card">
                     <h3>Compétence 6</h3>
-                    <p>Description ou réalisations liées à la compétence 6.</p>
-                </div>
+                    <p>Travailler dans une équipe informatique</p>
+                </a>
+
             </div>
         </section>
 
