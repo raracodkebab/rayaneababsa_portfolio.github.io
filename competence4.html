@@ -164,72 +164,157 @@
     </div>
 </nav>
 
-<header>
-    <h1>Compétence 4 – Gérer des données de l’information</h1>
-</header>
-
 <div class="container">
-
 <section>
-    <h2>Présentation de la compétence</h2>
+    <h2>Compétence 4 – Gérer les données de l'information</h2>
+
+    <h3>Présentation</h3>
     <p>
-        La compétence « Gérer des données de l'information » évolue fortement en deuxième année. 
-        L’objectif du niveau 2 est : <strong>Optimiser une base de données relationnelle et appréhender des modèles de données alternatifs</strong>.
+        La gestion des données occupe une place centrale dans la plupart des projets réalisés cette année. Qu'il s'agisse 
+        d'applications web, mobiles ou d'analyses statistiques, j'ai été amené à concevoir des bases de données, organiser 
+        des informations, sécuriser leur accès et les restituer sous une forme exploitable par les utilisateurs.
     </p>
     <p>
-        Les données sont l’actif le plus précieux d’une organisation. Gérer ces données implique de concevoir des architectures robustes, performantes, sécurisées et capables de supporter des charges importantes, tout en intégrant les technologies NoSQL modernes.
+        Les différents projets menés au cours de l'année m'ont permis d'approfondir les notions découvertes en première 
+        année et de comprendre que la qualité d'une application dépend fortement de la manière dont les données sont 
+        modélisées et manipulées.
     </p>
-
-    <h3>Objectifs de la compétence et Apprentissages Critiques</h3>
-
-    <h4>AC 3.01 – Concevoir et modéliser une base de données relationnelle complexe</h4>
     <p>
-        Niveau de maîtrise : <strong>Maîtrisé</strong><br>
-        J’ai appris à traduire un besoin métier en MCD/MLD optimisés, gérer les dépendances fonctionnelles, les formes normales et les relations complexes.
+        J'ai notamment travaillé sur des bases de données relationnelles, l'intégration d'API externes, la manipulation de 
+        données au format JSON ainsi que la réalisation de requêtes SQL plus complexes que celles étudiées auparavant.
     </p>
 
-    <h4>AC 3.02 – Optimiser et sécuriser l’interrogation et la manipulation des données</h4>
+    <h3>AC 1 – Optimiser les modèles de données de l'entreprise</h3>
     <p>
-        Niveau de maîtrise : <strong>Maîtrisé</strong><br>
-        J’ai maîtrisé les requêtes SQL avancées, l’analyse des plans d’exécution, la création d’index et l’utilisation de requêtes préparées pour sécuriser les accès.
+        Cette année, j'ai renforcé mes compétences en modélisation de bases de données grâce à plusieurs projets nécessitant 
+        la conception de schémas relationnels complets.
     </p>
-
-    <h4>AC 4.02 – Explorer et implémenter des modèles NoSQL</h4>
     <p>
-        Niveau de maîtrise : <strong>Maîtrisé</strong><br>
-        J’ai étudié les modèles clés‑valeurs et documents, et appris à concevoir des bases NoSQL distribuées, notamment via DynamoDB.
+        Lors du projet portant sur la Ligue 1, j'ai conçu un modèle de données permettant de représenter les équipes, les 
+        joueurs, les compétitions, les saisons, les statistiques individuelles et les transferts. Ce travail m'a obligé à 
+        réfléchir à l'organisation des informations afin d'éviter les redondances tout en conservant une structure cohérente 
+        et évolutive.
     </p>
-
-    <h3>Ressources mobilisées</h3>
     <p>
-        • SQL dans un langage de programmation (R3.07)  
-        • Systèmes de gestion de bases de données (R4.05)  
-        • Approfondissement personnel : DynamoDB, Single‑Table Design  
+        J'ai également utilisé les méthodes de modélisation étudiées en cours pour construire des MCD puis des MLD avant de 
+        passer à l'implémentation dans un système de gestion de base de données.
     </p>
-
-    <h3>Implication personnelle</h3>
     <p>
-        J’ai pris en charge la modélisation des schémas, la rédaction des scripts de migration et la documentation technique.  
-        Une modification non documentée pouvant casser tout un backend, j’ai mis en place une rigueur stricte dans la gestion des données.
+        Ces expériences m'ont appris qu'une bonne modélisation facilite non seulement le développement mais également les 
+        futures évolutions du système.
     </p>
 
-    <h3>Analyse réflexive</h3>
+    <h3>AC 2 – Assurer la confidentialité des données (intégrité et sécurité)</h3>
     <p>
-        J’ai surmonté mes difficultés initiales en SQL avancé en adoptant une approche plus méthodique : logique métier dans le backend, SQL optimisé pour l’extraction.  
-        Points forts : modélisation, sécurité, normalisation.  
-        Axe d’amélioration : tuning avancé (sharding, read replicas).
+        La sécurité des données a été une préoccupation constante dans les différents projets réalisés.
+    </p>
+    <p>
+        Dans les applications web développées cette année, j'ai pris l'habitude d'utiliser des requêtes préparées afin de 
+        limiter les risques d'injection SQL. J'ai également travaillé sur la gestion des droits d'accès en fonction des 
+        rôles des utilisateurs afin que chacun ne puisse accéder qu'aux fonctionnalités qui lui sont destinées.
+    </p>
+    <p>
+        Sur les projets impliquant des comptes utilisateurs ou des votes, la cohérence des données était essentielle. J'ai 
+        donc veillé à mettre en place des contrôles permettant de garantir l'unicité de certaines informations et d'éviter 
+        les incohérences dans la base.
+    </p>
+    <p>
+        Cette approche m'a permis de prendre conscience que la sécurité ne se limite pas à la protection contre les attaques 
+        mais concerne également la fiabilité des données stockées.
     </p>
 
-    <h3>Projets & réalisations</h3>
+    <h3>AC 3 – Organiser la restitution des données à travers la programmation et la visualisation</h3>
+    <p>
+        Une donnée n'a de valeur que si elle peut être comprise et exploitée.
+    </p>
+    <p>
+        Au cours de différents projets, j'ai développé des interfaces permettant d'afficher des informations provenant de 
+        bases de données ou d'API externes.
+    </p>
+    <p>
+        Par exemple, dans l'application mobile développée autour d'une API de contenus multimédias, les données récupérées 
+        au format JSON étaient transformées afin d'être affichées de manière claire et intuitive pour l'utilisateur.
+    </p>
+    <p>
+        J'ai également réalisé des travaux d'analyse statistique à partir de données sportives. L'utilisation de Python m'a 
+        permis de produire des représentations graphiques facilitant l'interprétation des résultats et la mise en évidence 
+        de tendances.
+    </p>
+    <p>
+        Ces expériences m'ont montré que la restitution des données constitue une étape aussi importante que leur stockage.
+    </p>
 
+    <h3>AC 4 – Manipuler des données hétérogènes</h3>
+    <p>
+        Les projets réalisés cette année m'ont amené à travailler avec plusieurs formats de données différents.
+    </p>
+    <p>
+        J'ai manipulé des bases relationnelles via SQL, exploité des données fournies par des API au format JSON et traité 
+        des fichiers de données dans le cadre d'analyses statistiques.
+    </p>
+    <p>
+        L'application mobile développée en Swift m'a notamment permis de comprendre le fonctionnement des échanges entre un 
+        client et une API distante. J'ai appris à récupérer, décoder et exploiter des structures JSON parfois complexes afin 
+        de les intégrer dans l'interface de l'application.
+    </p>
+    <p>
+        Cette diversité des formats rencontrés m'a permis de développer une plus grande capacité d'adaptation face aux 
+        différentes technologies utilisées dans les projets modernes.
+    </p>
 
+    <h3>Évolution de la compétence entre la première et la deuxième année</h3>
+    <p>
+        En première année, la gestion des données se limitait principalement à la création de bases simples et à l'écriture 
+        de requêtes SQL relativement élémentaires.
+    </p>
+    <p>
+        La deuxième année a marqué une évolution importante avec la conception de modèles plus complexes, l'optimisation des 
+        requêtes, l'intégration de données externes et la prise en compte des problématiques de sécurité.
+    </p>
+    <p>
+        Je suis désormais capable d'intervenir sur l'ensemble du cycle de vie de la donnée, depuis sa modélisation jusqu'à 
+        sa restitution dans une application.
+    </p>
+
+    <h3>Implication personnelle et posture professionnelle</h3>
+    <p>
+        Au fil des projets, j'ai développé une approche plus rigoureuse dans la gestion des données.
+    </p>
+    <p>
+        Je prends désormais le temps de réfléchir à la structure de la base avant de commencer son implémentation et je 
+        veille à documenter les choix effectués afin de faciliter la compréhension du projet par les autres membres de 
+        l'équipe.
+    </p>
+    <p>
+        Cette rigueur s'applique également à la rédaction des requêtes SQL, à la gestion des accès et à la qualité des 
+        informations manipulées.
+    </p>
+
+    <h3>Analyse réflexive et développement de l'autonomie</h3>
+    <p>
+        L'une des principales difficultés rencontrées cette année a été le passage de modèles théoriques étudiés en cours à 
+        des bases de données réellement utilisées dans des applications.
+    </p>
+    <p>
+        Progressivement, j'ai appris à identifier les besoins métier, à les traduire sous forme de schémas relationnels 
+        cohérents puis à développer les requêtes nécessaires pour exploiter efficacement les données.
+    </p>
+    <p>
+        J'ai également gagné en autonomie dans l'analyse et la correction des problèmes liés aux bases de données, notamment 
+        lorsqu'il fallait optimiser certaines requêtes ou résoudre des incohérences de modélisation.
+    </p>
 
     <h3>Bilan et perspectives</h3>
     <p>
-        Le niveau 2 est validé.  
-        Pour l’année 3 : maîtrise avancée du Single‑Table Design, intégration de Redis pour le caching et optimisation des performances à grande échelle.
+        Cette compétence m'a permis d'acquérir une vision plus complète de la gestion des données au sein d'une application.
     </p>
+    <p>
+        Je suis aujourd'hui capable de concevoir une base de données adaptée à un besoin donné, de sécuriser son accès, 
+        d'exploiter les informations qu'elle contient et de les restituer sous une forme pertinente pour l'utilisateur.
+    </p>
+<h3>Trace</h3>
 
+    <a href="trace.html" class="back-btn">trace des compétences</a>
     <a href="index.html" class="back-btn">← Retour à l'accueil</a>
 </section>
 

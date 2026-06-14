@@ -163,76 +163,153 @@
         </ul>
     </div>
 </nav>
-
-<header>
-    <h1>Compétence 3 – Administrer des systèmes informatiques communicants complexes</h1>
-</header>
-
 <div class="container">
-
 <section>
-    <h2>Présentation de la compétence</h2>
+    <h2>Compétence 3 – Administrer des systèmes informatiques communicants complexes</h2>
+
+    <h3>Présentation</h3>
     <p>
-        La compétence « Administrer des systèmes informatiques communicants complexes » marque le passage à l’ingénierie des infrastructures réseau et des environnements distribués. 
-        L’objectif du niveau 2 est clair : <strong>déployer des services dans une architecture réseau</strong>.
+        Au cours de cette deuxième année de BUT Informatique, j'ai découvert l'importance de l'infrastructure qui se cache 
+        derrière les applications que nous développons. Une application ne peut fonctionner correctement que si elle repose 
+        sur un environnement réseau et système correctement configuré et sécurisé.
     </p>
     <p>
-        Une application moderne dépend d’une infrastructure capable d’assurer la sécurité, la disponibilité, la virtualisation et la communication des données. 
-        Cette compétence s’est concrétisée par la mise en œuvre de serveurs virtuels, la configuration de réseaux locaux et cloud (VPC, sous-réseaux, routage) et la sécurisation des flux.
-    </p>
-
-    <h3>Objectifs de la compétence et Apprentissages Critiques</h3>
-
-    <h4>AC 3.01 – Concevoir et développer des applications communicantes</h4>
-    <p>
-        Niveau de maîtrise : <strong>Maîtrisé</strong><br>
-        J’ai implémenté des protocoles d’échange standardisés, géré des architectures client‑serveur, les flux HTTP/HTTPS, la sérialisation JSON et les erreurs réseau.
-    </p>
-
-    <h4>AC 3.02 – Utiliser des serveurs et services réseaux virtualisés</h4>
-    <p>
-        Niveau de maîtrise : <strong>Maîtrisé</strong><br>
-        Je sais provisionner des instances virtuelles, configurer des VPC, définir des règles de routage et segmenter une infrastructure en sous‑réseaux publics et privés.
-    </p>
-
-    <h4>AC 3.03 – Sécuriser les services et données d’un système</h4>
-    <p>
-        Niveau de maîtrise : <strong>Maîtrisé</strong><br>
-        J’ai configuré des pare‑feux, mis en place des politiques IAM, appliqué le principe du moindre privilège et sécurisé les flux par chiffrement.
-    </p>
-
-    <h3>Ressources mobilisées</h3>
-    <p>
-        • Programmation système (R3.05)  
-        • Architecture des réseaux (R3.06)  
-        • Virtualisation & Cloud Computing (R4.A.08)  
+        Les différents travaux réalisés m'ont permis d'aborder l'administration système sous Linux, la configuration de 
+        services web, la virtualisation ainsi que la sécurisation des communications réseau. J'ai notamment travaillé sur 
+        le déploiement de serveurs Apache, la configuration d'hôtes virtuels, l'utilisation de certificats SSL et 
+        l'analyse du trafic réseau avec Wireshark.
     </p>
     <p>
-        J’ai approfondi AWS, la conception de topologies cloud sécurisées et l’administration d’infrastructures managées.
+        Ces expériences m'ont permis de mieux comprendre le rôle de l'administrateur système et l'importance de la 
+        fiabilité des infrastructures dans un contexte professionnel.
     </p>
 
-    <h3>Implication personnelle</h3>
+    <h3>AC 1 – Concevoir et développer des applications communicantes</h3>
     <p>
-        J’ai développé une méthode de travail méticuleuse, essentielle dans un domaine où une simple erreur peut paralyser une architecture entière.  
-        En équipe, j’ai pris en charge l’infrastructure, la documentation technique et la cohérence des environnements.
+        Cette compétence s'est principalement développée à travers la mise en place de services web capables de communiquer 
+        via le réseau.
     </p>
-
-    <h3>Analyse réflexive</h3>
     <p>
-        Je considère désormais le réseau comme un composant logiciel à part entière.  
-        Mes points forts : conception de réseaux logiques, diagnostic réseau, sécurité.  
-        Axe d’amélioration : automatisation via Terraform (IaC).
+        Lors des travaux pratiques consacrés à Apache, j'ai appris à configurer un serveur web afin de rendre une 
+        application accessible depuis un navigateur. J'ai également travaillé sur la gestion des hôtes virtuels, la 
+        redirection d'URL et la personnalisation des ports d'écoute.
+    </p>
+    <p>
+        Ces manipulations m'ont permis de comprendre comment les requêtes HTTP circulent entre un client et un serveur et 
+        comment les différents composants d'une application communiquent entre eux.
+    </p>
+    <p>
+        J'ai également pris conscience de l'importance de la configuration réseau dans le bon fonctionnement d'une 
+        application, notamment lorsqu'il faut résoudre des problèmes liés à l'accès aux ressources ou à la communication 
+        entre plusieurs services.
     </p>
 
-    <h3>Projets & réalisations</h3>
+    <h3>AC 2 – Utiliser des serveurs et des services réseaux virtualisés</h3>
+    <p>
+        La virtualisation a occupé une place importante dans les différents projets réalisés cette année.
+    </p>
+    <p>
+        Grâce à VirtualBox, j'ai pu installer et administrer plusieurs machines virtuelles afin de reproduire des 
+        environnements proches de ceux utilisés en entreprise. Cette approche m'a permis de travailler sans impacter mon 
+        système principal tout en expérimentant librement différentes configurations.
+    </p>
+    <p>
+        J'ai notamment installé des serveurs Linux, configuré des services réseau et réalisé différents tests liés à la 
+        communication entre machines.
+    </p>
+    <p>
+        Ces travaux m'ont également permis de mieux comprendre les notions abordées dans le modèle OSI ainsi que le rôle 
+        des différentes couches dans les échanges réseau.
+    </p>
+    <p>
+        L'utilisation de machines virtuelles a renforcé mon autonomie en administration système et m'a donné une vision 
+        plus concrète du fonctionnement des infrastructures informatiques.
+    </p>
 
-   
+    <h3>AC 3 – Sécuriser les services et les données d'un système</h3>
+    <p>
+        La sécurité constitue aujourd'hui un aspect incontournable de l'administration des systèmes.
+    </p>
+    <p>
+        Au cours des travaux réalisés sous Apache, j'ai mis en place des connexions sécurisées en utilisant HTTPS et des 
+        certificats SSL générés avec OpenSSL. Cette démarche m'a permis de comprendre les mécanismes de chiffrement 
+        utilisés pour protéger les échanges entre un client et un serveur.
+    </p>
+    <p>
+        Afin de vérifier le bon fonctionnement de cette sécurisation, j'ai utilisé Wireshark pour observer les paquets 
+        échangés sur le réseau et analyser les différentes étapes de l'établissement d'une connexion sécurisée.
+    </p>
+    <p>
+        Ces manipulations m'ont permis de mieux comprendre le rôle du protocole TLS et l'importance de la protection des 
+        données lors des communications réseau.
+    </p>
+    <p>
+        J'ai également pris l'habitude d'adopter des configurations plus sécurisées et de vérifier systématiquement les 
+        paramètres sensibles avant la mise en service d'un système.
+    </p>
+
+    <h3>Évolution de la compétence entre la première et la deuxième année</h3>
+    <p>
+        En première année, les enseignements étaient principalement centrés sur la découverte des composants matériels, 
+        du fonctionnement général d'un système d'exploitation et des bases du réseau.
+    </p>
+    <p>
+        La deuxième année a marqué une évolution importante puisque je suis passé d'un rôle d'utilisateur à celui 
+        d'administrateur. Je ne me contente plus de comprendre le fonctionnement d'un système : je suis désormais capable 
+        de le configurer, de le déployer et de le sécuriser.
+    </p>
+    <p>
+        Les différentes SAÉ et les travaux pratiques m'ont permis de gagner en autonomie et de mieux appréhender les 
+        problématiques rencontrées dans les infrastructures professionnelles.
+    </p>
+
+    <h3>Implication personnelle et posture professionnelle</h3>
+    <p>
+        Dans cette compétence, j'ai adopté une démarche particulièrement rigoureuse car une erreur de configuration peut 
+        rapidement rendre un service inaccessible ou introduire une faille de sécurité.
+    </p>
+    <p>
+        J'ai pris l'habitude de documenter mes manipulations, de tester progressivement chaque modification et de vérifier 
+        systématiquement le comportement du système après chaque changement.
+    </p>
+    <p>
+        Cette méthode de travail m'a permis de mieux comprendre les mécanismes internes des services réseau et de 
+        développer des réflexes proches de ceux attendus dans un contexte professionnel.
+    </p>
+    <p>
+        Au fil des projets, j'ai également gagné en confiance dans l'utilisation de Linux et des outils d'administration 
+        système.
+    </p>
+
+    <h3>Analyse réflexive et développement de l'autonomie</h3>
+    <p>
+        Cette année a renforcé ma capacité à résoudre des problèmes techniques de manière autonome.
+    </p>
+    <p>
+        Lorsqu'un service ne fonctionnait pas correctement, j'ai appris à identifier méthodiquement l'origine du problème 
+        en analysant les journaux système, les fichiers de configuration ou le trafic réseau.
+    </p>
+    <p>
+        L'utilisation d'outils comme Wireshark, Apache ou OpenSSL m'a obligé à dépasser la simple application de tutoriels 
+        pour réellement comprendre les mécanismes mis en œuvre.
+    </p>
+    <p>
+        Cette démarche d'investigation est devenue un réflexe que j'applique désormais dans l'ensemble de mes projets 
+        informatiques.
+    </p>
 
     <h3>Bilan et perspectives</h3>
     <p>
-        Le niveau 2 est validé.  
-        Pour l’année 3 : Terraform (IaC), Kubernetes, microservices et scalabilité avancée.
+        Grâce aux différents travaux réalisés cette année, je maîtrise désormais les bases du déploiement et de 
+        l'administration de services réseau sous Linux.
     </p>
+    <p>
+        Je suis capable de configurer un serveur web, de mettre en place des communications sécurisées, d'utiliser des 
+        environnements virtualisés et de diagnostiquer des problèmes liés au réseau ou aux services.
+    </p>
+    <h3>Trace</h3>
+
+    <a href="trace.html" class="back-btn">trace des compétences</a>
 
     <a href="index.html" class="back-btn">← Retour à l'accueil</a>
 </section>

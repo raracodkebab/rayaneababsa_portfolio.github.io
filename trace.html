@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerie des SAÉ par compétence</title>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline'">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f4f6f9;
+            color: #333;
+            line-height: 1.6;
+            padding-top: 60px;
+        }
+
+        nav {
+            background-color: #1a1a2e;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        .nav-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 1rem;
+            height: 60px;
+        }
+
+        .logo {
+            color: #ffffff;
+            font-weight: bold;
+            font-size: 1.2rem;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-links a {
+            display: block;
+            color: #ffffff;
+            text-decoration: none;
+            padding: 0 1.5rem;
+            line-height: 60px;
+            transition: background 0.3s;
+        }
+
+        .nav-links a:hover {
+            background-color: #252542;
+            color: #00fff0;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: #ffffff;
+            padding: 3rem 1rem;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        section {
+            background: #ffffff;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        section h2 {
+            color: #1a1a2e;
+            margin-bottom: 1rem;
+            border-bottom: 3px solid #00fff0;
+            padding-bottom: 0.5rem;
+            display: inline-block;
+        }
+
+        .images-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .images-grid img {
+            width: 100%;
+            border-radius: 6px;
+            object-fit: cover;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .competence-link {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 0.5rem 1rem;
+            background-color: #1a1a2e;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 0.9rem;
+        }
+
+        .competence-link:hover {
+            background-color: #00fff0;
+            color: #1a1a2e;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #666666;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <div class="nav-container">
+        <a href="index.html" class="logo">Portfolio</a>
+        <ul class="nav-links">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="index.html#cv">Mon CV</a></li>
+        </ul>
+    </div>
+</nav>
+
+<header>
+    <h1>Galerie des SAÉ par compétence</h1>
+    <p>Images associées aux projets et SAÉ de chaque compétence.</p>
+</header>
+
+<div class="container">
+
+    <!-- COMPÉTENCE 1 -->
+    <section id="competence1">
+        <h2>Compétence 1 – Réaliser un développement d'application</h2>
+        <p>SAÉ et projets liés : AssoVote, PopCornBox, Mini-Shell, etc.</p>
+
+        <div class="images-grid">
+            <img src="sae/competence1/assovote.webp" alt="AssoVote – Compétence 1">
+            <img src="sae/competence1/assovote2.webp" alt="AssoVote 2 – Compétence 1">
+            <img src="sae/competence1/ballondor.webp" alt="Ballon d'Or – Compétence 1">
+            <img src="sae/competence1/ballondor1.webp" alt="Ballon d'Or 1 – Compétence 1">
+            <img src="sae/competence1/ballondor2.webp" alt="Ballon d'Or 2 – Compétence 1">
+            <img src="sae/competence1/ballondor3.webp" alt="Ballon d'Or 3 – Compétence 1">
+            <img src="sae/competence1/ballondor4.webp" alt="Ballon d'Or 4 – Compétence 1">
+            <img src="sae/competence1/ballondor5.webp" alt="Ballon d'Or 5 – Compétence 1">
+        </div>
+
+        <a href="competence1.html" class="competence-link">Voir la page de la compétence 1</a>
+    </section>
+
+    <!-- COMPÉTENCE 2 -->
+    <section id="competence2">
+        <h2>Compétence 2 – Optimiser des applications</h2>
+        <p>SAÉ et projets liés : graphes, optimisation, simplexe, etc.</p>
+
+        <div class="images-grid">
+            <img src="sae/competence2/case.webp" alt="Étude de cas – Compétence 2">
+            <img src="sae/competence2/devinamix.webp" alt="Devinamix – Compétence 2">
+            <img src="sae/competence2/devinanix.webp" alt="Devinanix – Compétence 2">
+            <img src="sae/competence2/image.webp" alt="Illustration – Compétence 2">
+            <img src="sae/competence2/javavol.webp" alt="JavaVol – Compétence 2">
+            <img src="sae/competence2/javavol2.webp" alt="JavaVol 2 – Compétence 2">
+            <img src="sae/competence2/saedevinanix.webp" alt="SAÉ Devinanix – Compétence 2">
+            <img src="sae/competence2/tpprojetvol.webp" alt="TP Projet Vol – Compétence 2">
+        </div>
+
+        <a href="competence2.html" class="competence-link">Voir la page de la compétence 2</a>
+    </section>
+
+    <!-- COMPÉTENCE 3 -->
+    <section id="competence3">
+        <h2>Compétence 3 – Administrer des systèmes informatiques communicants complexes</h2>
+        <p>SAÉ et projets liés : Apache, Linux, virtualisation, Wireshark, SSL/TLS, etc.</p>
+
+        <div class="images-grid">
+            <img src="sae/competence3/virtual.webp" alt="Virtualisation – Compétence 3">
+            <img src="sae/competence3/virtual1.webp" alt="Virtualisation 1 – Compétence 3">
+            <img src="sae/competence3/virtual3.webp" alt="Virtualisation 3 – Compétence 3">
+            <img src="sae/competence3/virtual4.webp" alt="Virtualisation 4 – Compétence 3">
+            <img src="sae/competence3/virtual5.webp" alt="Virtualisation 5 – Compétence 3">
+            <img src="sae/competence3/virtual6.webp" alt="Virtualisation 6 – Compétence 3">
+        </div>
+
+        <a href="competence3.html" class="competence-link">Voir la page de la compétence 3</a>
+    </section>
+
+    <!-- COMPÉTENCE 4 -->
+    <section id="competence4">
+        <h2>Compétence 4 – Gérer les données de l'information</h2>
+        <p>SAÉ et projets liés : Ligue 1, bases de données, SQL, JSON, analyses statistiques, etc.</p>
+
+        <div class="images-grid">
+            <img src="sae/competence4/ballondor6donne.webp" alt="Ballon d'Or données 1 – Compétence 4">
+            <img src="sae/competence4/ballondor7donne.webp" alt="Ballon d'Or données 2 – Compétence 4">
+            <img src="sae/competence4/pc1.webp" alt="PC 1 – Compétence 4">
+            <img src="sae/competence4/pc2.webp" alt="PC 2 – Compétence 4">
+            <img src="sae/competence4/tableau1.webp" alt="Tableau 1 – Compétence 4">
+            <img src="sae/competence4/tableau2.webp" alt="Tableau 2 – Compétence 4">
+            <img src="sae/competence4/tableau3.webp" alt="Tableau 3 – Compétence 4">
+            <img src="sae/competence4/tableau4.webp" alt="Tableau 4 – Compétence 4">
+            <img src="sae/competence4/tableau5.webp" alt="Tableau 5 – Compétence 4">
+            <img src="sae/competence4/tableau6.webp" alt="Tableau 6 – Compétence 4">
+        </div>
+
+        <a href="competence4.html" class="competence-link">Voir la page de la compétence 4</a>
+    </section>
+
+    <!-- COMPÉTENCE 5 -->
+    <section id="competence5">
+        <h2>Compétence 5 – Conduire un projet</h2>
+        <p>SAÉ et projets liés : AssoVote, projets mobiles, organisation, planification, etc.</p>
+
+        <div class="images-grid">
+            <img src="sae/competence5/cahierdeschargesae3.png" alt="Cahier des charges 3 – Compétence 5">
+            <img src="sae/competence5/cahierdeschargesae4.png" alt="Cahier des charges 4 – Compétence 5">
+            <img src="sae/competence5/devmobile.webp" alt="Développement mobile – Compétence 5">
+            <img src="sae/competence5/devmobile1.webp" alt="Développement mobile 1 – Compétence 5">
+            <img src="sae/competence5/devmobile3.webp" alt="Développement mobile 3 – Compétence 5">
+            <img src="sae/competence5/javascprit.webp" alt="JavaScript – Compétence 5">
+            <img src="sae/competence5/javascprit1.webp" alt="JavaScript 1 – Compétence 5">
+            <img src="sae/competence5/javascrpit.webp" alt="JavaScript projet – Compétence 5">
+        </div>
+
+        <a href="competence5.html" class="competence-link">Voir la page de la compétence 5</a>
+    </section>
+
+    <!-- COMPÉTENCE 6 -->
+    <section id="competence6">
+        <h2>Compétence 6 – Travailler dans une équipe informatique</h2>
+        <p>SAÉ et projets liés : travail en groupe, Git, collaboration, communication, etc.</p>
+
+        <div class="images-grid">
+            <img src="sae/competence6/Capture d'écran 2026-06-14 210211.png" alt="Capture d'écran – Compétence 6">
+            <img src="sae/competence6/chartegraphique.png" alt="Charte graphique – Compétence 6">
+            <img src="sae/competence6/sae3votepiuvre.webp" alt="SAÉ 3 Vote Pieuvre – Compétence 6">
+        </div>
+
+        <a href="competence6.html" class="competence-link">Voir la page de la compétence 6</a>
+    </section>
+
+</div>
+
+<footer>
+    <p>&copy; 2026 Rayane Ababsa - Tous droits réservés</p>
+</footer>
+
+</body>
+</html>
