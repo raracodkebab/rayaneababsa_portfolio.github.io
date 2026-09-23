@@ -4,142 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galerie des SAÉ par compétence</title>
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline'">
 
-    <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-
-        body {
-            background-color: #f4f6f9;
-            color: #333;
-            line-height: 1.6;
-            padding-top: 60px;
-        }
-
-        nav {
-            background-color: #1a1a2e;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            z-index: 1000;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-        }
-
-        .nav-container {
-            max-width: 1100px;
-            margin: 0 auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 0 1rem;
-            height: 60px;
-        }
-
-        .logo {
-            color: #ffffff;
-            font-weight: bold;
-            font-size: 1.2rem;
-            text-decoration: none;
-        }
-
-        .nav-links {
-            list-style: none;
-            display: flex;
-            align-items: center;
-        }
-
-        .nav-links a {
-            display: block;
-            color: #ffffff;
-            text-decoration: none;
-            padding: 0 1.5rem;
-            line-height: 60px;
-            transition: background 0.3s;
-        }
-
-        .nav-links a:hover {
-            background-color: #252542;
-            color: #00fff0;
-        }
-
-        header {
-            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
-            color: #ffffff;
-            padding: 3rem 1rem;
-            text-align: center;
-        }
-
-        .container {
-            max-width: 1100px;
-            margin: 2rem auto;
-            padding: 0 1rem;
-        }
-
-        section {
-            background: #ffffff;
-            padding: 2rem;
-            margin-bottom: 2rem;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-        }
-
-        section h2 {
-            color: #1a1a2e;
-            margin-bottom: 1rem;
-            border-bottom: 3px solid #00fff0;
-            padding-bottom: 0.5rem;
-            display: inline-block;
-        }
-
-        .images-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 1rem;
-            margin-top: 1rem;
-        }
-
-        .images-grid img {
-            width: 100%;
-            border-radius: 6px;
-            object-fit: cover;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
-
-        .competence-link {
-            display: inline-block;
-            margin-top: 1rem;
-            padding: 0.5rem 1rem;
-            background-color: #1a1a2e;
-            color: #ffffff;
-            text-decoration: none;
-            border-radius: 4px;
-            font-size: 0.9rem;
-        }
-
-        .competence-link:hover {
-            background-color: #00fff0;
-            color: #1a1a2e;
-        }
-
-        footer {
-            text-align: center;
-            padding: 2rem;
-            color: #666666;
-            font-size: 0.9rem;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <nav>
     <div class="nav-container">
-        <a href="index.html" class="logo">Portfolio</a>
+        <a href="index.html" class="logo">RA_</a>
         <ul class="nav-links">
             <li><a href="index.html">Accueil</a></li>
             <li><a href="index.html#cv">Mon CV</a></li>
@@ -148,14 +20,15 @@
 </nav>
 
 <header>
-    <h1>Galerie des SAÉ par compétence</h1>
+    <span class="eyebrow">Traces &amp; SAÉ</span>
+    <h1>Galerie des SAÉ</h1>
     <p>Images associées aux projets et SAÉ de chaque compétence.</p>
 </header>
 
-<div class="container">
+<div class="container wide">
 
     <!-- COMPÉTENCE 1 -->
-    <section id="competence1">
+    <section class="reveal" id="competence1">
         <h2>Compétence 1 – Réaliser un développement d'application</h2>
         <p>SAÉ et projets liés : AssoVote, PopCornBox, Mini-Shell, etc.</p>
 
@@ -174,7 +47,7 @@
     </section>
 
     <!-- COMPÉTENCE 2 -->
-    <section id="competence2">
+    <section class="reveal" id="competence2">
         <h2>Compétence 2 – Optimiser des applications</h2>
         <p>SAÉ et projets liés : graphes, optimisation, simplexe, etc.</p>
 
@@ -193,7 +66,7 @@
     </section>
 
     <!-- COMPÉTENCE 3 -->
-    <section id="competence3">
+    <section class="reveal" id="competence3">
         <h2>Compétence 3 – Administrer des systèmes informatiques communicants complexes</h2>
         <p>SAÉ et projets liés : Apache, Linux, virtualisation, Wireshark, SSL/TLS, etc.</p>
 
@@ -210,7 +83,7 @@
     </section>
 
     <!-- COMPÉTENCE 4 -->
-    <section id="competence4">
+    <section class="reveal" id="competence4">
         <h2>Compétence 4 – Gérer les données de l'information</h2>
         <p>SAÉ et projets liés : Ligue 1, bases de données, SQL, JSON, analyses statistiques, etc.</p>
 
@@ -231,7 +104,7 @@
     </section>
 
     <!-- COMPÉTENCE 5 -->
-    <section id="competence5">
+    <section class="reveal" id="competence5">
         <h2>Compétence 5 – Conduire un projet</h2>
         <p>SAÉ et projets liés : AssoVote, projets mobiles, organisation, planification, etc.</p>
 
@@ -250,7 +123,7 @@
     </section>
 
     <!-- COMPÉTENCE 6 -->
-    <section id="competence6">
+    <section class="reveal" id="competence6">
         <h2>Compétence 6 – Travailler dans une équipe informatique</h2>
         <p>SAÉ et projets liés : travail en groupe, Git, collaboration, communication, etc.</p>
 
@@ -269,5 +142,6 @@
     <p>&copy; 2026 Rayane Ababsa - Tous droits réservés</p>
 </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
