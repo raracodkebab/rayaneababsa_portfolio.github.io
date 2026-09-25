@@ -3,275 +3,181 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon Portfolio</title>
+    <title>Rayane Ababsa — Portfolio | Développeur & Étudiant en Informatique</title>
+    <meta name="description" content="Portfolio de Rayane Ababsa, étudiant en BUT Informatique passionné par le développement d'applications, l'optimisation et les technologies modernes.">
+    <meta name="theme-color" content="#05060f">
+    <meta name="author" content="Rayane Ababsa">
 
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline'">
+    <meta property="og:title" content="Rayane Ababsa — Portfolio">
+    <meta property="og:description" content="Développeur & Étudiant en Informatique — projets, compétences et CV.">
+    <meta property="og:type" content="website">
 
-    <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-
-        body {
-            background-color: #f4f6f9;
-            color: #333;
-            line-height: 1.6;
-            padding-top: 60px;
-        }
-
-        /* NAVBAR */
-        nav {
-            background-color: #1a1a2e;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            z-index: 1000;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-        }
-
-        .nav-container {
-            max-width: 1100px;
-            margin: 0 auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 0 1rem;
-            height: 60px;
-        }
-
-        .logo {
-            color: #ffffff;
-            font-weight: bold;
-            font-size: 1.2rem;
-            text-decoration: none;
-        }
-
-        .nav-links {
-            list-style: none;
-            display: flex;
-            align-items: center;
-        }
-
-        .nav-links > li {
-            position: relative;
-        }
-
-        .nav-links a {
-            display: block;
-            color: #ffffff;
-            text-decoration: none;
-            padding: 0 1.5rem;
-            line-height: 60px;
-            transition: background 0.3s;
-        }
-
-        .nav-links a:hover {
-            background-color: #252542;
-            color: #00fff0;
-        }
-
-        /* DROPDOWN */
-        .dropdown-menu {
-            display: none;
-            position: absolute;
-            top: 100%;
-            left: 0;
-            background-color: #1a1a2e;
-            min-width: 180px;
-            list-style: none;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-            border-bottom-left-radius: 4px;
-            border-bottom-right-radius: 4px;
-        }
-
-        .dropdown:hover .dropdown-menu {
-            display: block;
-        }
-
-        .dropdown-menu li a {
-            line-height: 45px;
-            padding: 0 1rem;
-            border-bottom: 1px solid #252542;
-        }
-
-        /* HEADER */
-        header {
-            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
-            color: #ffffff;
-            padding: 4rem 1rem;
-            text-align: center;
-        }
-
-        header h1 {
-            font-size: 2.5rem;
-            margin-bottom: 0.5rem;
-        }
-
-        header p {
-            color: #00fff0;
-            font-size: 1.2rem;
-            font-weight: 500;
-        }
-
-        /* CONTAINER */
-        .container {
-            max-width: 900px;
-            margin: 2rem auto;
-            padding: 0 1rem;
-        }
-
-        /* SECTIONS */
-        section {
-            background: #ffffff;
-            padding: 2rem;
-            margin-bottom: 2rem;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-        }
-
-        section h2 {
-            color: #1a1a2e;
-            margin-bottom: 1rem;
-            border-bottom: 3px solid #00fff0;
-            padding-bottom: 0.5rem;
-            display: inline-block;
-        }
-
-        /* COMPETENCE CARDS */
-        .projects-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-            gap: 1.5rem;
-            margin-top: 1rem;
-        }
-
-        .project-card {
-            background: #f8f9fa;
-            padding: 1.5rem;
-            border-radius: 6px;
-            border: 1px solid #e9ecef;
-            transition: transform 0.2s, box-shadow 0.2s;
-            cursor: pointer;
-        }
-
-        .project-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 6px 12px rgba(0,0,0,0.1);
-            border-color: #00fff0;
-        }
-
-        .project-card h3 {
-            color: #1a1a2e;
-            margin-bottom: 0.5rem;
-        }
-
-        .project-card a {
-            text-decoration: none;
-            color: inherit;
-        }
-
-        /* FOOTER */
-        footer {
-            text-align: center;
-            padding: 2rem;
-            color: #666666;
-            font-size: 0.9rem;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
     <nav>
         <div class="nav-container">
-            <a href="#" class="logo">Portfolio</a>
+            <a href="index.html" class="logo">RA_</a>
             <ul class="nav-links">
-                <li><a href="#about">Accueil</a></li>
+                <li><a href="#hero">Accueil</a></li>
+                <li><a href="#about">À propos</a></li>
                 <li><a href="cv.html">Mon CV</a></li>
                 <li class="dropdown">
-                    <a href="#competences">Compétences ▾</a>
+                    <a href="#competences">Compétences</a>
                     <ul class="dropdown-menu">
-                        <li><a href="competence1.html">Compétence 1</a></li>
-                        <li><a href="competence2.html">Compétence 2</a></li>
-                        <li><a href="competence3.html">Compétence 3</a></li>
-                        <li><a href="competence4.html">Compétence 4</a></li>
-                        <li><a href="competence5.html">Compétence 5</a></li>
-                        <li><a href="competence6.html">Compétence 6</a></li>
+                        <li><a href="competence1.html">1 · Développer</a></li>
+                        <li><a href="competence2.html">2 · Optimiser</a></li>
+                        <li><a href="competence3.html">3 · Administrer</a></li>
+                        <li><a href="competence4.html">4 · Gérer les données</a></li>
+                        <li><a href="competence5.html">5 · Conduire un projet</a></li>
+                        <li><a href="competence6.html">6 · Travailler en équipe</a></li>
                     </ul>
                 </li>
+                <li><a href="trace.html">Galerie</a></li>
             </ul>
         </div>
     </nav>
 
-    <header>
+    <header class="hero" id="hero">
+        <span class="eyebrow">Portfolio · BUT Informatique</span>
         <h1>Rayane Ababsa</h1>
-        <p>Développeur & Étudiant en Informatique</p>
+        <p class="subtitle">Développeur &amp; Étudiant en Informatique — je conçois des <span class="accent">applications modernes</span>, robustes et pensées pour évoluer.</p>
+        <div class="hero-cta">
+            <a href="#projets" class="btn btn-primary">Découvrir mes projets</a>
+            <a href="cv.html" class="btn btn-ghost">Consulter mon CV</a>
+        </div>
+        <div class="contact-links" aria-label="Liens de contact">
+            <a href="mailto:rayaneababsa.pro.57@gmail.com">Email</a>
+            <a href="https://www.linkedin.com/in/rayane-ababsa-044199301" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://github.com/raracodkebab" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </div>
     </header>
 
     <div class="container">
 
-        <section id="about">
+        <section id="about" class="reveal">
             <h2>À propos</h2>
-            <p>Bienvenue sur mon portfolio. Je suis étudiant en informatique, passionné par le développement d’applications, la conception logicielle et les technologies modernes.</p>
+            <div class="about-flex">
+                <div class="about-text">
+                    <p class="lead">Étudiant en troisième année de BUT Informatique, je recherche une opportunité de stage ou d'alternance.</p>
+                    <p>Je conçois des applications fiables et accessibles en m'appuyant sur une démarche structurée : comprendre le besoin, modéliser la solution, développer proprement et valider le résultat.</p>
+                    <p>Mes projets universitaires m'ont permis de travailler en équipe, de gérer des données, d'optimiser des algorithmes et de découvrir les contraintes d'un projet informatique de bout en bout.</p>
+                    <div class="stats">
+                        <div class="stat"><div class="num">6</div><div class="lbl">Compétences</div></div>
+                        <div class="stat"><div class="num">10+</div><div class="lbl">Projets &amp; SAÉ</div></div>
+                        <div class="stat"><div class="num">BUT</div><div class="lbl">Informatique</div></div>
+                    </div>
+                </div>
+                <div class="about-media">
+                    <img src="assets/avatar-tech.png" alt="Emblème futuriste représentant le développement logiciel">
+                </div>
+            </div>
         </section>
-<section id="cv">
-    <h2>Mon Parcours & CV</h2>
-    <p>
-        Vous pouvez consulter mon CV directement en ligne, sans téléchargement, en cliquant ici :
-        <a href="cv.html" style="color:#00fff0; font-weight:bold; text-decoration:none;">
-            ➜ Voir mon CV en ligne
-        </a>
-    </p>
-</section>
 
+        <section id="cv" class="reveal">
+            <h2>Mon Parcours &amp; CV</h2>
+            <p>Consultez mon CV directement en ligne, sans téléchargement.</p>
+            <a href="cv.html" class="btn btn-primary" style="margin-top:1.2rem;">➜ Voir mon CV en ligne</a>
+        </section>
 
-        <section id="competences">
+        <section id="projets" class="reveal">
+            <h2>Projets sélectionnés</h2>
+            <p>Quelques réalisations universitaires qui illustrent ma façon de travailler. Les liens GitHub et démos pourront être ajoutés lorsque les dépôts seront publiés.</p>
+            <div class="projects-grid">
+                <article class="project-card project-detail">
+                    <span class="num-tag">01 · APPLICATION</span>
+                    <h3>AssoVote</h3>
+                    <p>Conception d'une application de vote pour une association, de l'analyse du besoin à l'implémentation.</p>
+                    <div class="project-meta"><strong>Rôle :</strong> développement et conception</div>
+                    <div class="project-meta"><strong>Technologies :</strong> à compléter</div>
+                    <a class="project-link" href="https://github.com/raracodkebab" target="_blank" rel="noopener noreferrer">Voir sur GitHub</a>
+                </article>
+                <article class="project-card project-detail">
+                    <span class="num-tag">02 · DONNÉES</span>
+                    <h3>Ballon d'Or</h3>
+                    <p>Projet d'exploitation de données sportives avec modélisation, requêtes et restitution des résultats.</p>
+                    <div class="project-meta"><strong>Rôle :</strong> analyse et développement</div>
+                    <div class="project-meta"><strong>Technologies :</strong> SQL, données, visualisation</div>
+                    <a class="project-link" href="https://github.com/raracodkebab" target="_blank" rel="noopener noreferrer">Voir sur GitHub</a>
+                </article>
+                <article class="project-card project-detail">
+                    <span class="num-tag">03 · SYSTÈMES</span>
+                    <h3>Virtualisation &amp; réseaux</h3>
+                    <p>Mise en place et analyse d'un environnement système communicant dans le cadre des SAÉ.</p>
+                    <div class="project-meta"><strong>Rôle :</strong> administration et documentation</div>
+                    <div class="project-meta"><strong>Technologies :</strong> Linux, Apache, Wireshark</div>
+                    <a class="project-link" href="trace.html#competence3">Voir les traces</a>
+                </article>
+            </div>
+        </section>
+
+        <section id="stage" class="reveal">
+            <h2>Stage &amp; expérience professionnelle</h2>
+            <p>Cette section sera complétée avec mes expériences, missions et réalisations en entreprise.</p>
+            <div class="stage-placeholder">
+                <h3>Votre prochaine mission pourrait être ici</h3>
+                <p><strong>Poste :</strong> à compléter</p>
+                <p><strong>Entreprise :</strong> à compléter</p>
+                <p><strong>Missions :</strong> à compléter</p>
+                <p><strong>Période :</strong> à compléter</p>
+            </div>
+        </section>
+
+        <section id="competences" class="reveal">
             <h2>Mes Compétences (BUT Informatique)</h2>
+            <p>Six compétences travaillées au fil des projets. Cliquez pour découvrir le détail et les traces associées.</p>
 
             <div class="projects-grid">
-
                 <a href="competence1.html" class="project-card">
-                    <h3>Compétence 1</h3>
+                    <span class="num-tag">01</span>
+                    <h3>Développer</h3>
                     <p>Réaliser un développement d'application</p>
                 </a>
-
                 <a href="competence2.html" class="project-card">
-                    <h3>Compétence 2</h3>
+                    <span class="num-tag">02</span>
+                    <h3>Optimiser</h3>
                     <p>Optimiser des applications</p>
                 </a>
-
                 <a href="competence3.html" class="project-card">
-                    <h3>Compétence 3</h3>
+                    <span class="num-tag">03</span>
+                    <h3>Administrer</h3>
                     <p>Administrer des systèmes communicants</p>
                 </a>
-
                 <a href="competence4.html" class="project-card">
-                    <h3>Compétence 4</h3>
+                    <span class="num-tag">04</span>
+                    <h3>Gérer les données</h3>
                     <p>Gérer des données de l'information</p>
                 </a>
-
                 <a href="competence5.html" class="project-card">
-                    <h3>Compétence 5</h3>
+                    <span class="num-tag">05</span>
+                    <h3>Conduire</h3>
                     <p>Conduire un projet</p>
                 </a>
-
                 <a href="competence6.html" class="project-card">
-                    <h3>Compétence 6</h3>
+                    <span class="num-tag">06</span>
+                    <h3>Collaborer</h3>
                     <p>Travailler dans une équipe informatique</p>
                 </a>
-
             </div>
         </section>
 
     </div>
 
     <footer>
-        <p>&copy; 2026 Rayane Ababsa - Tous droits réservés</p>
+        <div class="socials">
+            <a href="cv.html">CV</a>
+            <a href="#projets">Projets</a>
+            <a href="trace.html">Galerie SAÉ</a>
+            <a href="#stage">Stage</a>
+            <a href="https://github.com/raracodkebab" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://www.linkedin.com/in/rayane-ababsa-044199301" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="mailto:rayaneababsa.pro.57@gmail.com">Email</a>
+        </div>
+        <p>&copy; 2026 Rayane Ababsa — Tous droits réservés</p>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
