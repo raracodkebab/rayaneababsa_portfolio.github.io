@@ -425,6 +425,17 @@ section p strong { color: var(--cyan); }
     margin: 0.4rem 0 0.5rem;
 }
 .project-card p { color: var(--muted); margin: 0; }
+.project-detail { min-height: 270px; }
+.project-meta { color: var(--muted); font-size: 0.95rem; margin-top: 0.45rem; }
+.project-meta strong { color: var(--text); }
+.project-link { display: inline-block; margin-top: 1rem; font-weight: 700; text-decoration: none; }
+.project-link:hover { text-shadow: 0 0 12px var(--cyan); }
+.stage-placeholder { margin-top: 1.4rem; padding: 1.4rem; border: 1px dashed var(--panel-brd); border-radius: 12px; background: rgba(0, 255, 240, 0.035); }
+.stage-placeholder h3 { margin-top: 0; color: var(--cyan); }
+.stage-placeholder p { color: var(--muted); margin: 0.35rem 0; }
+.contact-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 1.25rem; margin-top: 1.5rem; }
+.contact-links a { color: var(--muted); font-weight: 700; text-decoration: none; }
+.contact-links a:hover { color: var(--cyan); }
 
 /* ================= GALLERY (trace.html) ================= */
 .images-grid {
